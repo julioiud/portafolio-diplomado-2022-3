@@ -1,0 +1,30 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css';
+
+*{
+    /*border: 1px dotted #000;*/
+    box-sizing: border-box;
+}
+
+.main{
+    background: #4C0033;
+}
+
+.header{
+    background: #790252;
+}
+
+.nav{
+    background: #AF0171;
+}
+
+.slider{
+    background: #E80F88;
+}
+
+.section{
+    background-color: #1C6758;
+}
+
+.footer{
+    background-color: #3D8361;
+}
