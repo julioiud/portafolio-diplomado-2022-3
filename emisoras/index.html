@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emisora IUD Stereo</title>
+    <link href="./css/style.css" rel="stylesheet" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
+    <link href="./img/favicon.ico" rel="shortcut icon"/>
+    <link href="./manifest.json" rel="manifest" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">IUD Stereo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Help</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <main class="container">
+       <h1> Emisora IUD Stereo</h1>
+       <div class="container text-center">
+        <div class="row row-cols row-cols-sm-2 row-cols-md-4">
+          <div class="col-sm-12">
+            <i id="signal" class="fa-solid fa-signal fa-lg"></i>
+            <audio controls autoplay id="reproductor">
+                <source src=""/>
+                El navegador no soporta esta etiqueta
+            </audio>
+            <select 
+            onchange="changeEmisora(this)"
+            id="select-emisoras" class="form-select" aria-label="Default select example">
+            </select>
+          </div>
+          <div class="col-sm-12">
+            <button id="pause" onclick="play()" type="button" class="btn btn-light">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button id="play" onclick="pause()" type="button" class="btn btn-light">
+                <i class="fa-solid fa-pause"></i>
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <input onchange="changeVolume(this)" 
+            type="range" class="form-range"
+            min="0"
+            max="100"
+            step="0.5" 
+            id="volume">
+          </div>
+          <div class="col-sm-12">
+            <img src="./img/adorno.png" alt="" class="img-fluid"/>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

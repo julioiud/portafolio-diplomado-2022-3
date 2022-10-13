@@ -1,0 +1,19 @@
+#reproductor{
+    display: none;
+}
+
+#signal{
+    color: red;
+}
+
+.navbar{
+   background: #013d56
+}
+
+.navbar a{
+    color: #fff
+}
+
+.col{
+    padding: 10px;
+}
