@@ -1,3 +1,4 @@
+// simulamos una BBDD
 const emisoras = [
     {
         id: 0,
